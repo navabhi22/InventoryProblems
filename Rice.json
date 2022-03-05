@@ -1,0 +1,43 @@
+{
+  "TypesOfRice": [
+    {
+      "name": "Basumathi",
+      "weight": "12",
+      "Price": "120"
+    },
+    {
+      "name": "Bullet",
+      "weight": "20",
+      "Price": "150"
+    }
+  ],
+  "TypesOfPulses": [
+    {
+      "name": "GreenGram",
+      "weight": "9",
+      "Price": "100"
+    },
+    {
+      "name": "HorseGram",
+      "weight": "5",
+      "Price": "120"
+    },
+    {
+      "name": "BlackGram",
+      "weight": "8",
+      "Price": "100"
+    }
+  ],
+  "TypesOfWheat": [
+    {
+      "name": "Wheat1",
+      "weight": "20",
+      "Price": "50"
+    },
+    {
+      "name": "Wheat2",
+      "weight": "50",
+      "Price": "60"
+    }
+  ]
+}
