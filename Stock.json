@@ -1,0 +1,29 @@
+{
+  "StocksPortfolio": [
+    {
+      "Name": "Tata",
+      "Qty": "2600",
+      "Price": "120"
+    },
+    {
+      "Name": "Apple",
+      "Qty": "1000",
+      "Price": "150"
+    },
+	{
+      "Name": "Tesle",
+      "Qty": "1200",
+      "Price": "90"
+    },
+	{
+      "Name": "SpaceX",
+      "Qty": "500",
+      "Price": "75"
+    },
+	{
+      "Name": "Google",
+      "Qty": "1500",
+      "Price": "100"
+    }
+  ]
+}
