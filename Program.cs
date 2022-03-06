@@ -6,39 +6,38 @@ namespace InventoryDataManagementDemo
     {
         static void Main(string[] args)
         {
-            string path = "C:/Users/Acer/source/repos/InventoryDataManagementDemo/Rice.json";
+            string path = "C:/Users/Acer/source/repos/InventoryDataManagementDemo/Inventory.json";
+            InventoryManager inventoryManager = new InventoryManager();
+            Products data = inventoryManager.Read(path);
 
-            FetcJsonForRice fetcJsonForRice = new FetcJsonForRice();
-
-            Rice data = fetcJsonForRice.Read(path);
-            Console.WriteLine("For Rice");
+            Console.WriteLine("For ProductType 1");
             Console.WriteLine("--------------------------");
-            for (int i = 0; i < data.typesofRice.Count; i++)
+            for (int i = 0; i < data.ProductType1.Count; i++)
             {
-                Console.WriteLine("Name : " + data.typesofRice[i].name);
-                Console.WriteLine("Price per Kg : " + data.typesofRice[i].Price);
-                Console.WriteLine("Weight : " + data.typesofRice[i].weight);
-                Console.WriteLine("Price : " + data.typesofRice[i].Price * data.typesofRice[i].weight);
+                Console.WriteLine("Name : " + data.ProductType1[i].Name);
+                Console.WriteLine("Price per Kg : " + data.ProductType1[i].Price);
+                Console.WriteLine("Weight : " + data.ProductType1[i].weight);
+                Console.WriteLine("Total Price : " + data.ProductType1[i].Price * data.ProductType1[i].weight);
                 Console.WriteLine("--------------------------");
             }
-            Console.WriteLine("For Pulses");
+            Console.WriteLine("For Product Type 2");
             Console.WriteLine("--------------------------"); ;
-            for (int i = 0; i < data.typesofPulses.Count; i++)
+            for (int i = 0; i < data.ProductType2.Count; i++)
             {
-                Console.WriteLine("Name : " + data.typesofPulses[i].name);
-                Console.WriteLine("Price per Kg : " + data.typesofPulses[i].Price);
-                Console.WriteLine("Weight : " + data.typesofPulses[i].weight);
-                Console.WriteLine("Price : " + data.typesofPulses[i].Price * data.typesofPulses[i].weight);
+                Console.WriteLine("Name : " + data.ProductType2[i].Name);
+                Console.WriteLine("Price: " + data.ProductType2[i].Price);
+                Console.WriteLine("Qty : " + data.ProductType2[i].Qty);
+                Console.WriteLine("TotalvPrice : " + data.ProductType2[i].Price * data.ProductType2[i].Qty);
                 Console.WriteLine("--------------------------");
             }
-            Console.WriteLine("For Wheat");
+            Console.WriteLine("For Product 3");
             Console.WriteLine("--------------------------");
-            for (int i = 0; i < data.typesofWheat.Count; i++)
+            for (int i = 0; i < data.ProductType3.Count; i++)
             {
-                Console.WriteLine("Name : " + data.typesofWheat[i].name);
-                Console.WriteLine("Price per Kg : " + data.typesofWheat[i].Price);
-                Console.WriteLine("Weight : " + data.typesofWheat[i].weight);
-                Console.WriteLine("Price : " + data.typesofWheat[i].Price * data.typesofWheat[i].weight);
+                Console.WriteLine("Name : " + data.ProductType3[i].Name);
+                Console.WriteLine("Price : " + data.ProductType3[i].Price);
+                Console.WriteLine("Liter : " + data.ProductType3[i].Liter);
+                Console.WriteLine("Total Price : " + data.ProductType3[i].Price * data.ProductType3[i].Liter);
                 Console.WriteLine("--------------------------");
             }
 
