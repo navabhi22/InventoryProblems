@@ -1,0 +1,43 @@
+{
+  "ProductType1": [
+    {
+      "Name": "Product1",
+      "weight": "100",
+      "Price": "50"
+    },
+    {
+      "Name": "Product2",
+      "weight": "50",
+      "Price": "150"
+    }
+  ],
+  "ProductType2": [
+    {
+      "Name": "Product1",
+      "Qty": "500",
+      "Price": "100"
+    },
+    {
+      "Name": "Product2",
+      "Qty": "100",
+      "Price": "57"
+    },
+    {
+      "Name": "Product3",
+      "Qty": "200",
+      "Price": "10"
+    }
+  ],
+  "ProductType3": [
+    {
+      "Name": "Product1",
+      "Liter": "200",
+      "Price": "50"
+    },
+    {
+      "Name": "Product2",
+      "Liter": "500",
+      "Price": "60"
+    }
+  ]
+}
